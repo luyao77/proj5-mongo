@@ -1,10 +1,23 @@
-<form action="/new" method="POST">
-  <input type="text" name="name"></input>
-  <input type="text" name="description"></input>
-  <input type="submit"></input>
-</form>
+<!DOCTYPE html>
+<head>
+<body>
+
+<h1>The new pages</h1>
+<table style="width:100%">
+	<tr>
+    <th> Miles/Km </th>  <th> Begin Time</th>  <th> Begin Date</th>   <th> Open   </th>   <th> Close </th>
 
 {% for item in items %}
-  <h1> {{ item.name }} </h1>
-  <p> {{ item.description }} <p>
-{% endfor %}
+</tr>
+    <tr>
+<td>The km : {{item["km"]}} ／ The miles : {{item["mi"]}}</td>
+<td>The Begin Time : {{item["begin_time"]}}</td>
+<td>The Begin Date:{{item["begin_date"]}}</td>
+<td>The open time : {{item["open_time"]}}</td>
+<td>The close time : {{item["close_time"]}}</td>
+</tr>
+	{% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+test case 1: Normal case 
+	Putting 120 Km into the Km bar then get the outputs which is the  open_time and close_time 
+	After you push the "submit"button
+	You will get the webpage doesn't have change, but the km, miles, open_time and close_time， begin_date,begin_time send to the database, and you can check it from the JavaScrip Console  
+	After you push the "Display" button 
+	You will open a new tab and it shows "a new page" with a table with all values you just enter in the page
+
+test case 2: special case
+	when you enter 0 for the Km, it will shows you the corresponding open and close will the begin_time and begin_date
+	when you push " submit" all values of 0 km will get into the database 
+	when you push the " Display" it will show you the values in the database 
+
+test case3:
+	when any of those  km, miles, open_time and close_time， begin_date,begin_time is 0, when you push “submit” “display” button, nothing will display 
+
+
+
+
+PLEASE READ THIS:
+I use the db.tododb.delete_many({}) to clear the database, but sometimes I found the new page with data will come out, it maybe in the next page, I am wonder why 
+
+And from my test, I found that db.tododb.drop() will cause the error.
+
+
+ 
