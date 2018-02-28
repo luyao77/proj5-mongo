@@ -56,7 +56,7 @@ def new():
     close_time = request.form['close']
 
 
-     # If the location is tempty, don't include it
+     
 
     #documents
     item_doc = {
